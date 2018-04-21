@@ -19,15 +19,15 @@ The following is a list of syslog API that the client uses to send different mes
 To build and run the syslog server docker container:
 
 ```sh
-$ docker build --rm -t isim/go-syslog .
-$ docker run --rm -p 10154:10154 isim/go-syslog
+$ docker build --rm -t olitvin/go-syslog .
+$ docker run --rm -p 10154:10154 olitvin/go-syslog
 ```
 
 To build and run the client Docker container:
 
 ```sh
-$ docker build --rm -t isim/gosyslog-client .
-$ docker run --rm isim/gosyslog-client
+$ docker build --rm -t olitvin/gosyslog-client .
+$ docker run --rm olitvin/gosyslog-client
 ```
 
 The log emitter script can be used to generate a continuous stream of logs that is sent to the syslog server using the Docker syslog log driver.
