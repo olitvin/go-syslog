@@ -1,7 +1,7 @@
-FROM golang:1.6.2-alpine
-MAINTAINER Ivan Sim, ihcsim@gmail.com
+FROM golang:1.10.1-alpine
+MAINTAINER Oleg Litvin, olitvin@gmail.com
 
-ARG PACKAGE=github.com/ihcsim/go-syslog
+ARG PACKAGE=github.com/olitvin/go-syslog
 ENV HOST ":10514"
 
 COPY . $GOPATH/src/$PACKAGE
